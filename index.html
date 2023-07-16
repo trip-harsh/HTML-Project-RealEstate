@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-<title>Real Estate</title>
-
+<html lang="en">
 <head>
+    <title>Real Estate</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,63 +10,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body style="background-color: #f8f9fa;">
-    <div class="row bg-light">
-        <div style="width: 100%">
-            <div class="float-end" style="padding: 8px">
-                <img class="phoneImg" src="assets/mobile-phone-icon-png-0.jpg.png" alt="" />
-                <label class="mob-no">+91 6267141892</label>
-            </div>
-        </div>
-    </div>
+<body>
+    <header class="Top">
 
-    <div class="row">
-        <nav class="padr_0 padd_0 navbar navbar-expand-sm navbar-light bg-darks" style="background-color: #f8f9fa;">
-            <div class="container-fluid"style="margin-right: 15px;">
-                <a class="navbar-brand headImage" href="#"><img src="./assets/logo.jpg" alt="" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Properties</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Agent</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: rgb(13, 194, 13)" href="#">Contact</a>
-                        </li>
-                    </ul>
+        <div class="row bg-light">
+            <div style="width: 100%">
+                <div class="float-end">
+                    <img class="phoneImg" src="assets/mobile-phone-icon-png-0.jpg.png" alt="img" />
+                    <label class="mob-no">+91 6267141892</label>
                 </div>
             </div>
-        </nav>
-    </div>
+        </div>
 
-    <div class="container-fluid">
+        <div class="row">
+            <nav class="padr_0 padd_0 navbar navbar-expand-sm navbar-light bg-darks">
+                <div class="container-fluid">
+                    <a class="navbar-brand headImage" href="#"><img src="./assets/logo.jpg" alt="img" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Properties</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Agent</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: rgb(13, 194, 13)" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container-fluid">
         <div class="row content-container">
             <div class="col-6 left-part">
-                <h3 style="padding: 8px">Search Property</h3>
+                <h3>Search Property</h3>
                 <form>
-
                     <div class="row g-3 form-class">
                         <div class="col-4">
                             <label for="keyword" class="col-form-label">Keyword</label>
                         </div>
+
                         <div class="col-8 float-end">
                             <input type="text" id="keyword" class="form-control" placeholder="Keyword">
                         </div>
                     </div>
-
                     <div class="row g-3 form-class">
                         <div class="col-4">
                             <label for="status" class="col-form-label">Property Status</label>
@@ -78,7 +79,6 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="row g-3 form-class">
                         <div class="col-4">
                             <label for="type" class="col-form-label">Property Type</label>
@@ -89,7 +89,6 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="row g-3 form-class">
                         <div class="col-4">
                             <label for="Location" class="col-form-label">Location</label>
@@ -98,7 +97,6 @@
                             <input type="text" id="Location" class="form-control" placeholder="Location">
                         </div>
                     </div>
-
                     <div class="row g-3 form-class-duel">
                         <div class="col-4">
                             <label for="price" class="col-form-label">Price</label>
@@ -107,13 +105,11 @@
                             <select type="text" id="price" class="form-select">
                                 <option value="Any">Any</option>
                             </select>
-
                             <select type="text" id="price-select" class="form-select">
                                 <option value="Any">Any</option>
                             </select>
                         </div>
                     </div>
-
                     <div class="row g-3 form-class-duel">
                         <div class="col-4">
                             <label for="bedroom" class="col-form-label">Bedrooms</label>
@@ -128,7 +124,6 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="row g-3 form-class-duel">
                         <div class="col-4">
                             <label for="Bathrooms" class="col-form-label">Bathrooms</label>
@@ -141,10 +136,8 @@
                             <select type="text" id="status" class="form-select">
                                 <option value="Any">Any</option>
                             </select>
-
                         </div>
                     </div>
-
                     <div class="row g-3 form-class-duel">
                         <div class="col-4">
                             <label for="area" class="col-form-label">Area</label>
@@ -152,122 +145,132 @@
                         <div class="col-8 float-end selector">
                             <select type="text" id="area" class="form-select">
                                 <option value="Any">Any</option>
-                            </select> 
-
+                            </select>
                             <select type="text" id="area-select" class="form-select">
                                 <option value="Any">Any</option>
                             </select>
                         </div>
                     </div>
-
                     <div class="row g-3 form-class-duel">
                         <div class="col-4"></div>
                         <div class="col-8 float-end selector">
                             <button class="button">Search</button>
                         </div>
-                    </div>   
+                    </div>
                 </form>
             </div>
-
             <div class="col-6 right-part">
             </div>
         </div>
-    </div>
-
-
+    </section>
+    
     <div class="details row">
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding-bottom: 25px;">
-            <img src="assets/791899_start_512x512.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/791899_start_512x512.png" alt="img">
             <div class="text-box">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor perspiciatis fugit molestiae iusto?</p>
-                <a href="#" style="color: rgb(11, 180, 11); text-decoration: none;">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci
+                    quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor
+                    perspiciatis fugit molestiae iusto?</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding-bottom: 25px;">
-            <img src="assets/Streamline-17-512.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/Streamline-17-512.png" alt="img">
             <div class="text-box">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor perspiciatis fugit molestiae iusto?</p>
-                <a href="#" style="color: rgb(11, 180, 11); text-decoration: none;">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci
+                    quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor
+                    perspiciatis fugit molestiae iusto?</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding-bottom: 25px;">
-            <img src="assets/wallet-57-106202.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/wallet-57-106202.png" alt="img">
             <div class="text-box">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor perspiciatis fugit molestiae iusto?</p>
-                <a href="#" style="color: rgb(11, 180, 11); text-decoration: none;">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci
+                    quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor
+                    perspiciatis fugit molestiae iusto?</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding-bottom: 25px;">
-            <img src="assets/Data-Pie-icon.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/Data-Pie-icon.png" alt="img">
             <div class="text-box">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor perspiciatis fugit molestiae iusto?</p>
-                <a href="#" style="color: rgb(11, 180, 11); text-decoration: none;">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci
+                    quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor
+                    perspiciatis fugit molestiae iusto?</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding-bottom: 25px;">
-            <img src="assets/React.js_logo-512.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/React.js_logo-512.png" alt="img">
             <div class="text-box">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor perspiciatis fugit molestiae iusto?</p>
-                <a href="#" style="color: rgb(11, 180, 11); text-decoration: none;">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci
+                    quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor
+                    perspiciatis fugit molestiae iusto?</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding-bottom: 25px;">
-            <img src="assets/791899_start_512x512.png" alt="">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="assets/791899_start_512x512.png" alt="img">
             <div class="text-box">
                 <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor perspiciatis fugit molestiae iusto?</p>
-                <a href="#" style="color: rgb(11, 180, 11); text-decoration: none;">Learn More</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aspernatur ex at minus, adipisci
+                    quo distinctio sunt cum blanditiis! Perferendis exercitationem deserunt, voluptas magni dolore dolor
+                    perspiciatis fugit molestiae iusto?</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
     </div>
-    <div class="footer-page container-fluid" style="background-color: #cdcdcd;">
-        <div class="row gapper" style="padding-top: 14px;">
+    <div class="footer-page container-fluid">
+        <div class="row gapper">
             <div class="aboutText col-lg-3 col-md-3 col-sm-12">
                 <h4>About RealEstate</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem pariatur praesentium eos soluta ipsa! Aliquid blanditiis adipisci quibusdam quae ducimus, fugiat enim illo deleniti nihil maiores eligendi numquam quod ipsam.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem pariatur praesentium eos
+                    soluta ipsa! Aliquid blanditiis adipisci quibusdam quae ducimus, fugiat enim illo deleniti nihil
+                    maiores eligendi numquam quod ipsam.</p>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <h4>Links</h4>
                 <div class="row links">
-                    <div class="item col-md-12 col-3"><a href="#" style="color: black; text-decoration: none;">Home</a></div>
-                    <div class="item col-md-12 col-3"><a href="#" style="color: black; text-decoration: none;">Properties</a></div>       
-                    <div class="item col-md-12 col-3"><a href="#" style="color: black; text-decoration: none;">Agent</a></div>
-                    <div class="item col-md-12 col-3"><a href="#" style="color: black; text-decoration: none;">Blog</a></div>
-                    <div class="item col-md-12 col-3"><a href="#" style="color: black; text-decoration: none;" >Contact</a></div>                  
+                    <div class="item col-md-12 col-3"><a href="#">Home</a>
+                    </div>
+                    <div class="item col-md-12 col-3"><a href="#">Properties</a></div>
+                    <div class="item col-md-12 col-3"><a href="#">Agent</a>
+                    </div>
+                    <div class="item col-md-12 col-3"><a href="#">Blog</a>
+                    </div>
+                    <div class="item col-md-12 col-3"><a href="#">Contact</a></div>
                 </div>
-            
             </div>
-
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <h4>Information</h4>
                 <div class="row links">
                     <div class="item col-md-12 col-3">
-                      <p>T & C</p>
+                        <p>T & C</p>
                     </div>
                     <div class="item col-md-12 col-3">
-                      <p>License</p>
+                        <p>License</p>
                     </div>
                     <div class="item col-md-12 col-3">
-                      <p>Privacy & policy</p>
+                        <p>Privacy & policy</p>
                     </div>
                     <div class="item col-md-12 col-3">
-                      <p>Contact Us</p>
+                        <p>Contact Us</p>
                     </div>
-                  </div>
+                </div>
             </div>
-
             <div class="col-lg-3 col-md-3 col-sm-12" style="padding-bottom: 10px;">
                 <h4>Newsletter</h4>
                 <div class="row links">
-                    <div class="col-8 newsletter">
-                        <input type="text" placeholder="Email" class="form-control">
+                    <div class="col-9 newsletter">
+                        <input type="text" placeholder="Email" class="inner-news form-control">
                     </div>
-                    <div class="col-4 newsletter-btn">
+                    <div class="col-3 newsletter-btn">
                         <button class="btn btn-success">Sign Up</button>
                     </div>
                 </div>
@@ -275,7 +278,7 @@
         </div>
     </div>
 
-    <div class="Copyright" style="padding-top: 14px;">
+    <footer class="Copyright">
         <p>Copyright © 2019 realestate. All rights reserved</p>
     </div>
 </body>
